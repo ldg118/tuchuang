@@ -116,11 +116,10 @@ cachefly绑定cloudflare pages
 3.1 回到 Workers 和 Pages > D1 > 创建数据库 > 仪表盘 > 数据库名称img(名称可取任意值) > 创建
    
 3.2 进入img数据库 > 控制台 > 粘贴以下代码后 > 点击执行 > 等待提示此查询已成功执行。
-   
 
+代码：
 
-
-   
+【
 DROP TABLE IF EXISTS tgimglog;
 CREATE TABLE IF NOT EXISTS tgimglog (
     `id` integer PRIMARY KEY NOT NULL,
@@ -139,8 +138,7 @@ CREATE TABLE IF NOT EXISTS imginfo (
     `total` integer,
     `time` DATE
 );
-
-
+】
 
 
 3.3 回到 Workers 和 Pages /telegraph-Image项目 > 设置 > 函数 > D1 数据库绑定 > 变量名IMG > img数据库 > 点击保存
